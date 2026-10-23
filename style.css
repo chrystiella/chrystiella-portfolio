@@ -340,6 +340,18 @@ h1 span {
     background-color: transparent;
 }
 
+#hobbies.section {
+    display: block;
+}
+
+#hobbies .section-heading {
+    margin-bottom: 32px;
+}
+
+#hobbies .section-content {
+    width: 100%;
+}
+
 .section-heading .eyebrow {
     margin-bottom: 11px;
 }
@@ -380,21 +392,16 @@ h2 {
 
 .interest-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
 }
 
 .interest-list li {
-    min-height: 72px;
-    padding: 16px;
-    display: flex;
-    align-items: baseline;
-    gap: 12px;
-    background: linear-gradient(145deg, #132137, #101a2c);
+    min-height: 194px;
+    padding: 26px 24px;
+    background: rgba(17, 26, 42, 0.72);
     border: 1px solid var(--line);
-    border-radius: 12px;
-    font-size: 13px;
-    font-weight: 700;
+    border-radius: 26px;
     transition: border-color 160ms ease, transform 160ms ease;
 }
 
@@ -403,10 +410,18 @@ h2 {
     border-color: rgba(64, 199, 222, 0.55);
 }
 
-.interest-number {
-    color: #43cfe0;
-    font-size: 10px;
-    font-weight: 800;
+.interest-list h3 {
+    margin: 0 0 14px;
+    color: #f0f4ff;
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+.interest-list p {
+    margin: 0;
+    color: #b8c7dc;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
 .experience-list {
@@ -574,6 +589,20 @@ h2 {
         grid-template-columns: 1fr;
         gap: 22px;
     }
+
+    .interest-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .interest-list li {
+        min-height: 170px;
+        padding: 22px;
+    }
+
+    .interest-list p {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 760px) {
@@ -678,6 +707,10 @@ h2 {
 
     .interest-list {
         grid-template-columns: 1fr;
+    }
+
+    .interest-list li {
+        min-height: 0;
     }
 
     .footer-top {
