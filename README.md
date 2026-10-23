@@ -4,7 +4,7 @@ A responsive, static portfolio for Chrystiella Mensah, a cybersecurity student a
 
 ## Run locally
 
-Open `index.html` in a browser, or serve the project directory with a local web server. The included HTML and CSS graders report their scores in the browser console when the page is served over HTTP.
+Open `index.html` in a browser, or serve the project directory with a local web server.
 
 ## Files
 
@@ -12,4 +12,3 @@ Open `index.html` in a browser, or serve the project directory with a local web 
 - `style.css` — responsive layout and visual styling
 - `profiles.jpeg` — profile photo
 - `resume.pdf` — cybersecurity student analyst resume available to download
-- `html-grader.js` and `css-grader.js` — assignment grading scripts
