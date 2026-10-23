@@ -534,6 +534,48 @@ h2 {
     font-weight: 700;
 }
 
+@media (max-width: 1000px) {
+    .site-header,
+    .hero {
+        width: min(100% - 48px, 820px);
+    }
+
+    .site-header nav {
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 0;
+        padding: 64px 0 82px;
+        grid-template-columns: 1fr;
+        gap: 44px;
+    }
+
+    .hero-copy {
+        max-width: 760px;
+    }
+
+    h1 {
+        font-size: clamp(58px, 8vw, 78px);
+    }
+
+    .portrait-card {
+        width: min(82%, 420px);
+        margin: 0 auto;
+    }
+
+    .portrait-card img {
+        height: 480px;
+    }
+
+    .section {
+        padding: 52px 0;
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+}
+
 @media (max-width: 760px) {
     .site-header,
     .hero {
@@ -559,9 +601,7 @@ h2 {
     }
 
     .hero {
-        min-height: 0;
         padding: 58px 0 73px;
-        grid-template-columns: 1fr;
         gap: 38px;
     }
 
@@ -571,11 +611,6 @@ h2 {
 
     h1 {
         font-size: clamp(52px, 11vw, 70px);
-    }
-
-    .portrait-card {
-        width: min(82%, 360px);
-        margin: 0 auto;
     }
 
     .portrait-card img {
@@ -588,12 +623,6 @@ h2 {
 
     .content-wrap {
         padding: 10px 22px 55px;
-    }
-
-    .section {
-        padding: 46px 0;
-        grid-template-columns: 1fr;
-        gap: 22px;
     }
 
     .experience-list {
